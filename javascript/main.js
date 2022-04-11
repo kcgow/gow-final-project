@@ -1,4 +1,20 @@
-const question = [
+// 6 Second Timer
+const timeH = document.getElementById("seconds");
+let timeSecond = 6;
+
+const countDown = setInterval(() => {
+    timeSecond--;
+    timeH.innerHTML = timeSecond;
+
+    if (timeSecond <= 0 || timeSecond < 1) {
+        timeH.innerHTML = `Out of time!`;
+    }
+}, 1000);
+
+// Question
+const questionBox = document.getElementById('question-box');
+
+let question = [
     "sodas",
     "national parks",
     "social media apps",
@@ -31,14 +47,14 @@ const question = [
     "methods of air transportation",
     "car brands",
     "famous glasses-wearers",
-]
+];
 
+let myQuestion = question[Math.floor(Math.random() * question.length)];
+questionBox.innerHTML = myQuestion;
 
-let randomQuestion = question[Math.floor(Math.random() * question.length)];
-
-const questionBox = document.getElementById('question-box');
-
-questionBox.setAttribute("value", "randomQuestion");
-
+// Done Button
 const doneButton = document.getElementById("done-button");
+doneButton.addEventListener("click", reload, false);
+
+
 

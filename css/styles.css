@@ -11,7 +11,7 @@ header {
 }
 
 .logo {
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 nav {
@@ -144,14 +144,14 @@ footer p {
     align-items: center;
 }
 
-.timer {
+.timer p{
     font-family: Comfortaa;
     font-size: 64px;
     color: #C97EAA;
-    border: #C97EAA 5px solid;
-    border-radius: 10px;
+    /* border: #C97EAA 5px solid;
+    border-radius: 10px; */
     padding: 20px 40px;
-    margin-top: 80px;
+    margin: 60px 0px 20px 0px;
 }
 
 .prompt {
