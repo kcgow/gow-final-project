@@ -49,8 +49,13 @@ let question = [
     "famous glasses-wearers",
 ];
 
-let myQuestion = question[Math.floor(Math.random() * question.length)];
-questionBox.innerHTML = myQuestion;
+let randomQuestion = question[Math.floor(Math.random() * question.length)];
+
+function supplyQuestion() {
+    questionBox.innerHTML = randomQuestion;
+}
+
+supplyQuestion();
 
 // Done Button
 const doneButton = document.getElementById("done-button");
