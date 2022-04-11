@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Six Second Rule</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -20,9 +21,17 @@
         <nav>
             <a href="">rules</a>
             <a href="">about</a>
+            <img class="menu-icon" src="img/menu-icon-5.png" alt="hamburger menu icon">
         </nav>
     </header>
-
+    <section class="dropdown">
+        <div class="dropdown-menu" id="menu">
+            <ul class="menu-items">
+                <li><a href="#">rules</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+        </div>
+    </section>
     <main style="background-image: url('img/white-gradient-background.png');">
         <section class="gamespace">
             <div class="timer">
@@ -41,7 +50,7 @@
     <footer>
         <p>General Assembly Front-End Web Development Course</p>
     </footer>
-    <script src="javascript/main.js"></script>
+    <script src="javascript/game.js"></script>
 </body>
 
 

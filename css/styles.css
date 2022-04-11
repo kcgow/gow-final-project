@@ -24,6 +24,44 @@ nav a {
     padding-right: 50px;
 }
 
+nav img {
+    height: 40px;
+    width: 40px;
+
+}
+
+nav img:hover {
+    cursor: pointer;
+}
+
+
+.dropdown#menu-card{
+    padding-right: 20px;
+}
+
+.dropdown-menu {
+    background-color: #F7E3EF;
+    font-family: Comfortaa;
+    height: 120px;
+    width: 150px;
+    text-align: left;
+    border: 1px #F7E3EF solid;
+    border-radius: 10px;
+}
+
+.dropdown-menu a {
+    color: #D9877B;
+    text-decoration: none;
+}
+
+.dropdown-menu li {
+    padding: 10px 0px;
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+}
+
 /* Homepage */
 
 .difficulty-card {
@@ -114,28 +152,6 @@ footer p {
     font-size: 12px;
 }
 
-/* Mobile */
-@media (max-width: 760px) {
-
-}
-
-/* Desktop/Tablet */
-@media (min-width: 765px){
-    header {
-        font-family: Comfortaa;
-        text-decoration: none;
-        color:black;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    nav {
-      margin-top: 40px;
-      padding-right: 40px;
-    }
-    
-}
-
 /* Game Page */
 .gamespace {
     display: flex;
@@ -148,8 +164,7 @@ footer p {
     font-family: Comfortaa;
     font-size: 64px;
     color: #C97EAA;
-    /* border: #C97EAA 5px solid;
-    border-radius: 10px; */
+    font-weight: 900;
     padding: 20px 40px;
     margin: 60px 0px 20px 0px;
 }
@@ -158,6 +173,7 @@ footer p {
     font-family: Comfortaa;
     font-size: 54px;
     margin-top: 40px;
+    font-weight: 200;
 }
 
 .name-3 {
@@ -172,8 +188,8 @@ footer p {
     border: #C97EAA 5px solid;
     width: 300px;
     height: 80px;
-    border-radius: 10px;
-    margin: 80px 0px;
+    border-radius: 100px;
+    margin: 80px 0px 180px 0px;
     text-align: center;
     padding-top: 40px;
 }
@@ -192,4 +208,57 @@ footer p {
     font-family: Comfortaa;
     padding: 10px 0px 0px 10px;
     font-size: 12px;
+}
+
+/* Desktop/Tablet*/
+@media (min-width: 761px){
+    header {
+        font-family: Comfortaa;
+        text-decoration: none;
+        color:black;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav {
+      margin-top: 40px;
+      padding-right: 40px;
+    }
+    
+    nav img {
+        display: none;
+    }
+
+    .dropdown {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+
+    nav {
+        margin-top: 32px;
+    }
+    nav a {
+        display: none;
+    }
+
+    nav img {
+        margin-right: 20px;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+        flex-direction: flex-end;
+    }
+
+    .dropdown {
+        display: flex; 
+        justify-content: flex-end;
+    }
 }
