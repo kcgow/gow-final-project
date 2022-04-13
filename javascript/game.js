@@ -44,7 +44,7 @@ let question = [
     "jewelry stores",
     "grammy award winners",
     "famous doctors",
-    "methods of air transportation",
+    "ways of air transportation",
     "car brands",
     "famous glasses-wearers",
     "countries in Europe",
@@ -52,7 +52,8 @@ let question = [
     "songs",
     "flavors of potato chips",
     "types of exercise",
-    "things you'd find in an office",
+    "office items",
+    "tv stations",
 ];
 
 let randomQuestion = question[Math.floor(Math.random() * question.length)];

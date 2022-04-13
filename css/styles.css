@@ -261,4 +261,21 @@ footer p {
         display: flex; 
         justify-content: flex-end;
     }
+
+    .difficulty-card {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .difficulty-card div {
+        height: 100px;
+        width: 400px;
+        margin: 45px 0px;
+        
+    }
+
+
+
 }
